@@ -1,11 +1,11 @@
-#include <stdio.h>//merhaba ilsat
-#include<stdlib.h>
-#include<string.h>
+#include <stdio.h>//merhaba ilshat
+#include<stdlib.h>//merhaba nursultan
+#include<string.h>//merhaba minesnot
 
 //Çalışanın verilerini tutmak için yapı tanımladık.
 struct isci
 {
-    unsigned int sicil;
+    int sicil;
     int saat, dakika;
     char girisCikis;
 } calisan;
