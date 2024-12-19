@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include<stdlib.h>
 #include<string.h>
 
 //Çalışanın verilerini tutmak için değişkenler tanımladık.
