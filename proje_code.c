@@ -1,6 +1,6 @@
-#include <stdio.h>//merhaba ilshat
-#include<stdlib.h>//merhaba nursultan
-#include<string.h>//merhaba minesnot
+#include <stdio.h>
+#include<stdlib.h>
+#include<string.h>
 
 //Çalışanın verilerini tutmak için yapı tanımladık.
 struct isci
