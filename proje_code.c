@@ -67,6 +67,6 @@ int main(){
     fclose(gec);
     fclose(erken);
 
-printf("basarili!");
+    printf("basarili!");
     return 0;
 }
