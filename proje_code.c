@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include<string.h>
 
-//Çalışanın verilerini tutmak için değişkenler tanımladık.
+//Çalışanın verilerini tutmak için yapi tanımladık.
+   struct isci{ 
     int sicil;
     int saat, dakika;
     char girisCikis;
-
+}calisan;
 int main(){
     // Önceden dosyaları açtık.
     FILE *gunluk, *gec, *erken;
@@ -25,11 +26,11 @@ int main(){
     int max_erken_dakika=0;  //En erken gidenin kaç dakika erken gittiği 
     int baslama_dakika=9*60; //Başlama saati (09:00) dakikayla
     int bitis_dakika=17*60;  //Bitiş saatı (17:00) dakikayla
-    while(fscanf(gunluk,"%d %d:%d %c", &sicil, &saat, &dakika, &girisCikis)!=EOF)
+    while(fscanf(gunluk,"%d %d:%d %c", &calisan.sicil, &calisan.saat, &calisan.dakika, &calisan.girisCikis)!=EOF)
     {
-        int toplam_dakika= (saat*60)+dakika;
+        int toplam_dakika= (calisan.saat*60)+calisan.dakika;
             //Gecikme dakikalarını hesaplar ve en çok gecikeni bulur
-        if(girisCikis=='<' && toplam_dakika > baslama_dakika)
+        if(calisan.girisCikis=='<' && toplam_dakika > baslama_dakika)
         {
           int gecikme= toplam_dakika - baslama_dakika;
           if(gecikme>max_gec_dakika)
@@ -39,7 +40,7 @@ int main(){
            }
         }
             //Kaç dakika erken gittiğini hesaplar ve en erken gideni bulur
-        if(girisCikis=='>' && toplam_dakika < bitis_dakika)
+        if(calisan.girisCikis=='>' && toplam_dakika < bitis_dakika)
         {
           int erken_cikis= bitis_dakika - toplam_dakika;
           if(erken_cikis>max_erken_dakika)
