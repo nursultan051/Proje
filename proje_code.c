@@ -36,7 +36,7 @@ int main(){
           if(gecikme>max_gec_dakika)
            {
               max_gec_dakika=gecikme;
-              max_gec_sicil=sicil;
+              max_gec_sicil=calisan.sicil;
            }
         }
             //Kaç dakika erken gittiğini hesaplar ve en erken gideni bulur
@@ -46,7 +46,7 @@ int main(){
           if(erken_cikis>max_erken_dakika)
            {
              max_erken_dakika=erken_cikis;
-             max_erken_sicil=sicil;
+             max_erken_sicil=calisan.sicil;
            }
         }
     }
