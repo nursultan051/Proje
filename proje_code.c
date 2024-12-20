@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include<string.h>
 
-//Çalışanın verilerini tutmak için yapi tanımladık.
-struct isci{ 
-    int sicil;
-    int saat, dakika;
-    char girisCikis;
-}calisan;
+
 int main(){
+    //Çalışanın verilerini tutmak için yapi tanımladık.
+    struct isci{ 
+        int sicil;
+        int saat, dakika;
+        char girisCikis;
+    }calisan;
+    
     // Önceden dosyaları açtık.
     FILE *gunluk, *gec, *erken;
     gunluk = fopen("gunluk.dat", "r");
