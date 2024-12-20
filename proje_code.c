@@ -2,7 +2,7 @@
 #include<string.h>
 
 //Çalışanın verilerini tutmak için yapi tanımladık.
-   struct isci{ 
+struct isci{ 
     int sicil;
     int saat, dakika;
     char girisCikis;
