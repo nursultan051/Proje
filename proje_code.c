@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include<string.h>
 
 #define baslama_dakika (9 * 60)  //Başlama saati (09:00) dakikayla
 #define bitis_dakika (17 * 60)   //Bitiş saatı (17:00) dakikayla
